@@ -16,12 +16,29 @@ body {
     background-color: var(--dark);
 }
 
+a {
+    color: var(--primary);
+}
+
+a:hover {
+    color: var(--primary);
+    text-decoration: none;
+}
+
 .text-muted {
     color: var(--muted) !important;
 }
 
 .bg-dark {
     background-color: var(--dark) !important;
+}
+
+.bg-dark-x {
+    background-color: var(--dark-x) !important;
+}
+
+.bg-primary {
+    background: linear-gradient(90deg, var(--primary) 0%, var(--primary-x) 100%);
 }
 
 .navbar {
@@ -57,4 +74,79 @@ body {
 
 .shadow {
     box-shadow: 0 .5rem .5rem 0 rgba(0, 0, 0, 0.5) !important;
+}
+
+.bg-image {
+    background-image: url('../img/bg-dark-1.svg');
+    background-size: cover;
+    min-height: 1000px;
+}
+
+.bg-image-x {
+    background-image: url('../img/bg-dark-2.svg');
+    background-size: cover;
+    min-height: 1000px;
+}
+
+.bg-image-xx {
+    background-image: url('../img/bg-dark-3.svg');
+    background-size: cover;
+    min-height: 500px;
+}
+
+.card {
+    border-radius: 1rem;
+}
+
+.icon-container {
+    width: 50px;
+    height: 50px;
+}
+
+.rounded-top {
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
+}
+
+.form-control {
+    background-color: var(--dark-xx);
+    height: unset;
+    padding: .8rem 1rem;
+    border: 0;
+}
+
+.form-control:focus {
+    background-color: var(--dark-xx);
+    outline: 0 none;
+    color: var(--light);
+}
+
+@media(max-width: 575px) {
+    .w-75 {
+        width: 100% !important;
+    }
+    .py-5 {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+
+    }
+    .btn {
+        width: 100%;
+    }
+    .list-inline-item {
+        display: block;
+        text-align: center;
+    }
+    footer {
+        text-align: center;
+    }
+    footer .list-inline-item {
+        display: inline-block;
+    }
+    footer .text-right {
+        text-align: center !important;
+    }
+    footer small {
+        display: block;
+    }
 }
